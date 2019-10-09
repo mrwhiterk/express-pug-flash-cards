@@ -2,9 +2,12 @@ extends layout.pug
 
 block content
   section#content
-    h2= prompt
+    h2= text
     if hint
       p
         i Hint: #{hint}
+    a(href=`${id}?side=${btnName}`) #{btnName}
+    br
+    a(href='/cards') next card
     
     
