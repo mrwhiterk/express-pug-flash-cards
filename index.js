@@ -8,6 +8,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 
 // middleware
 app.use(cookieParser());
+app.use('/static', express.static('public'))
 
 // only run middleware on /users route
 // app.get('/users', (req, res, next) => {})
